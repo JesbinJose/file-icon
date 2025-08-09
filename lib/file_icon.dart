@@ -3,9 +3,9 @@ import 'src/data.dart';
 
 class FileIcon extends StatelessWidget {
   final String fileName;
-  final double size;
+  final double? size;
 
-  FileIcon(String fileName, {required this.size})
+  FileIcon(String fileName, {this.size})
       : this.fileName = fileName.toLowerCase();
 
   @override
